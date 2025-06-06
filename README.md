@@ -83,3 +83,5 @@ if
 - And the confidence > 0.6
 
 Then increment the count only once per unique track_id.
+
+Download demo video [here](https://github.com/Yanaput/Strawberry-detection-in-video/blob/master/inference/output_video.mp4)
