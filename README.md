@@ -1,8 +1,3 @@
-# **Problem 3: Computer vision for farming**
-**By**: Yanaput Makbonsonglop
-
-TL;DR : [Watch the inference demo video](./inference/output_video.mp4) 
-
 ### Requirement
 - Detect and locate strawberries in a static
 image.
@@ -75,17 +70,6 @@ low, meaning there's no sign of overfitting.
 Beside the parameters set from gird search, on the training I increase images resolution from 640 to 728, increase 
 to 100 epochs. Also, to increase then generalization of the model I augmented data to increase the diversity in the data.
 
-<p align="center">
-  <img src="./model/SGD_lr00.002_wd0.0005_augment/train/train_batch2.jpg" alt="Training example" width="500">
-  <br>
-  <em>Training example showing annotated strawberries</em>
-</p>
-
-<p align="center">
-    <img src="./model/SGD_lr00.002_wd0.0005_augment/train/confusion_matrix_normalized.png" alt="Training example" width="500">
-    <br>
-    <em>Confusion matrix</em>
-</p>
 
 ### Video inference
 YOLO provided object tracking feature, which allow user to choose tracker type either botsort or bytetrack and configure other
@@ -100,6 +84,3 @@ if
 
 Then increment the count only once per unique track_id.
 
-[Watch the inference demo video](./inference/output_video.mp4)
-
-p.s. I removed weights of grid search, in order to reduce the submission file size.
