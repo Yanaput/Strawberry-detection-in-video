@@ -25,9 +25,8 @@ def extract_bboxes(mask):
 
         # find bounding box of contour
         for contour in contours:
-            if len(contour) >= 3:
-                x, y, w, h = cv2.boundingRect(contour)
-                bboxes.append((x, y, x + w, y + h))  # (x_min, y_min, x_max, y_max)
+            x, y, w, h = cv2.boundingRect(contour)
+            bboxes.append((x, y, x + w, y + h))  # (x_min, y_min, x_max, y_max)
 
     return bboxes
 
